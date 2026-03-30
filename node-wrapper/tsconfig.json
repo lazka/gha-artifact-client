@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "maxNodeModuleJsDepth": 0,
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "target": "esnext",
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "@actions/artifact/lib/internal/upload/path-and-artifact-name-validation.js": [
+        "./node_modules/@actions/artifact/lib/internal/upload/path-and-artifact-name-validation.d.ts"
+      ],
+      "@actions/artifact/lib/internal/shared/artifact-twirp-client.js": [
+        "./node_modules/@actions/artifact/lib/internal/shared/artifact-twirp-client.d.ts"
+      ],
+      "@actions/artifact/lib/internal/shared/util.js": [
+        "./node_modules/@actions/artifact/lib/internal/shared/util.d.ts"
+      ],
+      "@actions/artifact/lib/internal/upload/retention.js": [
+        "./node_modules/@actions/artifact/lib/internal/upload/retention.d.ts"
+      ],
+      "@actions/artifact/lib/internal/upload/stream.js": [
+        "./node_modules/@actions/artifact/lib/internal/upload/stream.d.ts"
+      ],
+      "@actions/artifact/lib/internal/upload/blob-upload.js": [
+        "./node_modules/@actions/artifact/lib/internal/upload/blob-upload.d.ts"
+      ],
+      "@actions/artifact/lib/internal/upload/types.js": [
+        "./node_modules/@actions/artifact/lib/internal/upload/types.d.ts"
+      ],
+      "@actions/artifact/lib/generated/index.js": [
+        "./node_modules/@actions/artifact/lib/generated/index.d.ts"
+      ],
+      "@actions/artifact/lib/internal/shared/errors.js": [
+        "./node_modules/@actions/artifact/lib/internal/shared/errors.d.ts"
+      ],
+      "@actions/artifact/lib/generated/results/api/v1/artifact.js": [
+        "./node_modules/@actions/artifact/lib/generated/results/api/v1/artifact.d.ts"
+      ]
+    }
+  },
+  "include": [
+    "*.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

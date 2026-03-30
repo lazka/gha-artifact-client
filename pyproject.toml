@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling>=1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gha-artifact-client"
+version = "0.1.0"
+description = "GitHub Actions Artifact Client for Python"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Christoph Reiter", email = "reiter.christoph@gmail.com" }]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/lazka/gha-artifact-client"
+
+[project.scripts]
+gha-artifact-client = "gha_artifact_client.cli:main"
+
+[dependency-groups]
+dev = [
+  "ty>=0.0.26",
+  "pytest>=8.4.2",
+  "ruff>=0.14.1",
+  "PyGithub>=2.8.1",
+]
+
+[tool.uv]
+exclude-newer = "5 days"
+
+[tool.ruff]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+  "integration: tests that require a live GitHub Actions runtime",
+]
+
+[tool.ty.environment]
+python-version = "3.11"
+

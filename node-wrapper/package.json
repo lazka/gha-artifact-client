@@ -1,0 +1,22 @@
+{
+  "name": "gha-artifact-client-node-wrapper",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rolldown -c rolldown.config.js",
+    "lint": "eslint .",
+    "tsc": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@actions/artifact": "6.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.12.0",
+    "eslint": "^10.1.0",
+    "eslint-plugin-jsdoc": "^62.8.0",
+    "globals": "^17.4.0",
+    "rolldown": "^1.0.0-rc.12",
+    "typescript": "^6.0.2"
+  }
+}
