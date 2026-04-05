@@ -146,7 +146,7 @@ class ArtifactClientApi:
         ]
         if missing:
             raise UnsupportedEnvironmentError(
-                "Artifact upload requires a live GitHub Actions job runtime. "
+                "Artifact API requires a live GitHub Actions job runtime. "
                 f"Missing environment variables: {', '.join(missing)}."
             )
 
