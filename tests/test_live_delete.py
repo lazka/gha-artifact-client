@@ -27,7 +27,7 @@ def test_live_delete_removes_artifact(tmp_path: Path) -> None:
     api = ArtifactClientApi()
 
     upload_result = api.upload_artifact(artifact_file, name=artifact_name)
-    assert upload_result.id > 0
+    assert upload_result.id
 
     delete_result = api.delete_artifact(artifact_name)
 

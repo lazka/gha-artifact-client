@@ -31,7 +31,7 @@ def test_live_list_returns_uploaded_artifact(tmp_path: Path) -> None:
     api = ArtifactClientApi()
 
     upload_result = api.upload_artifact(artifact_file, name=artifact_name)
-    assert upload_result.id > 0
+    assert upload_result.id
 
     list_result = api.list_artifacts()
 

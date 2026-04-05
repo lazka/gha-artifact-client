@@ -172,7 +172,7 @@ async function uploadArtifact(payload) {
 
 /**
  * @param {DeletePayload} payload
- * @returns {Promise<{id: number}>}
+ * @returns {Promise<{id: string}>}
  */
 async function deleteArtifact(payload) {
   const { name } = payload
@@ -192,7 +192,7 @@ async function deleteArtifact(payload) {
     throw new InvalidResponseError('DeleteArtifact: response from backend was not ok')
   }
 
-  return { id: Number(deleteArtifactResp.artifactId) }
+  return { id: deleteArtifactResp.artifactId }
 }
 
 /**

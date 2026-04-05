@@ -45,8 +45,8 @@ def _expires_in_to_unix(expires_in: float | int) -> float:
 class ArtifactUploadResult:
     """Result of a successful artifact upload."""
 
-    id: int
-    """The numeric artifact ID assigned by GitHub Actions, e.g. ``42``."""
+    id: str
+    """The artifact ID assigned by GitHub Actions."""
 
     size: int
     """The size of the uploaded artifact in bytes, e.g. ``1048576``."""
@@ -61,8 +61,8 @@ class ArtifactUploadResult:
 class ArtifactDeleteResult:
     """Result of a successful artifact deletion."""
 
-    id: int
-    """The numeric artifact ID of the deleted artifact, e.g. ``42``."""
+    id: str
+    """The artifact ID of the deleted artifact."""
 
 
 @dataclass(frozen=True, slots=True)
@@ -79,8 +79,8 @@ class ArtifactSignedURLResult:
 class ArtifactInfo:
     """A single artifact entry returned by :meth:`ArtifactClientApi.list_artifacts`."""
 
-    id: int
-    """The numeric artifact ID assigned by GitHub Actions, e.g. ``42``."""
+    id: str
+    """The artifact ID assigned by GitHub Actions."""
 
     name: str
     """The artifact name, e.g. ``"package.tar.gz"``."""
@@ -306,7 +306,7 @@ class ArtifactClientApi:
 
         assert raw_id is not None and raw_size is not None and raw_digest is not None
         return ArtifactUploadResult(
-            id=int(raw_id),
+            id=str(raw_id),
             size=int(raw_size),
             digest=str(raw_digest),
         )
@@ -387,7 +387,7 @@ class ArtifactClientApi:
             )
 
         assert raw_id is not None
-        return ArtifactDeleteResult(id=int(raw_id))
+        return ArtifactDeleteResult(id=str(raw_id))
 
     def get_signed_artifact_url(self, name: str) -> ArtifactSignedURLResult:
         """Return a pre-signed download URL for a GitHub Actions artifact.
@@ -457,7 +457,7 @@ class ArtifactClientApi:
 
             infos.append(
                 ArtifactInfo(
-                    id=int(item["id"]),
+                    id=str(item["id"]),
                     name=str(item["name"]),
                     size=int(item["size"]),
                     created_at=created_at,

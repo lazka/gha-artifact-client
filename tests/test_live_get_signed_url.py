@@ -27,7 +27,7 @@ def test_live_get_signed_artifact_url_returns_https_url(tmp_path: Path) -> None:
     api = ArtifactClientApi()
 
     upload_result = api.upload_artifact(artifact_file, name=artifact_name)
-    assert upload_result.id > 0
+    assert upload_result.id
 
     result = api.get_signed_artifact_url(artifact_name)
 

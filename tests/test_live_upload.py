@@ -32,7 +32,7 @@ def test_live_upload_visible_via_pygithub(tmp_path: Path) -> None:
 
     result = ArtifactClientApi().upload_artifact(artifact_file, name=artifact_name)
 
-    assert result.id > 0
+    assert result.id
     assert result.digest == f"sha256:{expected_digest}"
 
     client = Github(auth=Auth.Token(token))
@@ -51,11 +51,11 @@ def test_live_upload_visible_via_pygithub(tmp_path: Path) -> None:
             f"/repos/{repository_name}/actions/runs/{run_id}/artifacts",
         )
 
-        if artifact_response.get("id") == result.id:
+        if str(artifact_response.get("id")) == result.id:
             artifact_data = artifact_response
 
         run_artifacts = run_response.get("artifacts", [])
-        if any(artifact.get("id") == result.id for artifact in run_artifacts):
+        if any(str(artifact.get("id")) == result.id for artifact in run_artifacts):
             break
 
         # The upload can finish before the artifact is visible through the REST API.
@@ -63,6 +63,6 @@ def test_live_upload_visible_via_pygithub(tmp_path: Path) -> None:
 
     assert artifact_data is not None
     assert artifact_data["name"] == artifact_name
-    assert any(artifact.get("id") == result.id for artifact in run_artifacts or [])
+    assert any(str(artifact.get("id")) == result.id for artifact in run_artifacts or [])
 
     assert artifact_data.get("digest") == f"sha256:{expected_digest}"
