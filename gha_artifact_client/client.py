@@ -31,14 +31,14 @@ def _expires_at_to_unix(expires_at: _ExpiresAt) -> float:
                 "got a naive datetime which has ambiguous timezone semantics. "
                 "Add tzinfo, e.g. dt.datetime(..., tzinfo=dt.timezone.utc)."
             )
-        return expires_at.timestamp()
-    return float(expires_at)
+        return expires_at.timestamp() * 1000
+    return float(expires_at) * 1000
 
 
 def _expires_in_to_unix(expires_in: float | int) -> float:
     return (
         dt.datetime.now(tz=dt.UTC) + dt.timedelta(seconds=float(expires_in))
-    ).timestamp()
+    ).timestamp() * 1000
 
 
 @dataclass(frozen=True, slots=True)
@@ -450,10 +450,8 @@ class ArtifactClientApi:
                 )
 
             # Node wrapper guarantees both createdAt and digest are present.
-            # createdAt is a Unix timestamp in milliseconds (integer string).
-            created_at = dt.datetime.fromtimestamp(
-                int(item["createdAt"]) / 1000, tz=dt.UTC
-            )
+            # createdAt is a Unix timestamp in milliseconds.
+            created_at = dt.datetime.fromtimestamp(item["createdAt"] / 1000, tz=dt.UTC)
 
             infos.append(
                 ArtifactInfo(

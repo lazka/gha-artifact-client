@@ -17,6 +17,7 @@ const ERROR_PREFIX = 'GHA_ARTIFACT_CLIENT_ERROR:'
  *   mimeType?: string,
  *   expiresAt?: number,
  * }} UploadPayload
+ * expiresAt is a Unix timestamp in milliseconds.
  */
 
 /**
@@ -44,7 +45,7 @@ const ERROR_PREFIX = 'GHA_ARTIFACT_CLIENT_ERROR:'
  *   id: string,
  *   name: string,
  *   size: string,
- *   createdAt: string,
+ *   createdAt: number,
  *   digest: string,
  * }} ListArtifactInfo
  */
@@ -97,7 +98,7 @@ async function withStdoutRedirect(fn) {
 
 /**
  * @param {UploadPayload} payload
- * @returns {Promise<{size: number, digest: string, id: string}>}
+ * @returns {Promise<{size: string, digest: string, id: string}>}
  */
 async function uploadArtifact(payload) {
   const { name, filePath, mimeType, expiresAt } = payload
@@ -120,7 +121,7 @@ async function uploadArtifact(payload) {
 
   let expires
   if (expiresAt !== undefined) {
-    expires = Timestamp.fromDate(new Date(expiresAt * 1000))
+    expires = Timestamp.fromDate(new Date(expiresAt))
   }
   if (expires !== undefined) {
     createArtifactReq.expiresAt = expires
@@ -164,7 +165,7 @@ async function uploadArtifact(payload) {
   }
 
   return {
-    size: uploadResult.uploadSize,
+    size: String(uploadResult.uploadSize),
     digest: `sha256:${uploadResult.sha256Hash}`,
     id: finalizeArtifactResp.artifactId,
   }
@@ -259,7 +260,7 @@ async function listArtifacts(payload) {
       id: String(artifact.databaseId),
       name: artifact.name,
       size: String(artifact.size),
-      createdAt: String(createdAtDate.getTime()),
+      createdAt: createdAtDate.getTime(),
       digest,
     }
   })

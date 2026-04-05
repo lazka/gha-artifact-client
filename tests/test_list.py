@@ -20,7 +20,7 @@ _ARTIFACT_1 = {
     "id": "42",
     "name": "my-artifact",
     "size": "1234",
-    "createdAt": "1748779200000",  # 2025-06-01T12:00:00Z
+    "createdAt": 1748779200000,  # 2025-06-01T12:00:00Z
     "digest": "sha256:abc123",
 }
 
@@ -28,7 +28,7 @@ _ARTIFACT_2 = {
     "id": "99",
     "name": "other-artifact",
     "size": "5678",
-    "createdAt": "1748854200000",  # 2025-06-02T08:30:00Z
+    "createdAt": 1748854200000,  # 2025-06-02T08:30:00Z
     "digest": "sha256:def456",
 }
 

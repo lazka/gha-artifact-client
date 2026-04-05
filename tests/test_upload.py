@@ -230,7 +230,7 @@ def test_upload_file_includes_expires_at_when_requested(
     api.upload_artifact(artifact_file, expires_at=expiry)
 
     payload = captured["payload"]
-    assert payload["expiresAt"] == pytest.approx(expiry.timestamp())
+    assert payload["expiresAt"] == pytest.approx(expiry.timestamp() * 1000)
 
 
 def test_upload_file_includes_expires_in_when_requested(
@@ -267,8 +267,8 @@ def test_upload_file_includes_expires_in_when_requested(
     after = dt.datetime.now(tz=dt.UTC).timestamp()
 
     payload = captured["payload"]
-    assert payload["expiresAt"] == pytest.approx(before + 3600, abs=5)
-    assert payload["expiresAt"] <= after + 3600
+    assert payload["expiresAt"] == pytest.approx((before + 3600) * 1000, abs=5000)
+    assert payload["expiresAt"] <= (after + 3600) * 1000
 
 
 def test_upload_file_expires_at_and_expires_in_conflict(
