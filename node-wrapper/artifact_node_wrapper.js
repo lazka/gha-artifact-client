@@ -1,7 +1,6 @@
 import { validateArtifactName } from '@actions/artifact/lib/internal/upload/path-and-artifact-name-validation.js'
 import { internalArtifactTwirpClient } from '@actions/artifact/lib/internal/shared/artifact-twirp-client.js'
 import { getBackendIdsFromToken } from '@actions/artifact/lib/internal/shared/util.js'
-import { getExpiration } from '@actions/artifact/lib/internal/upload/retention.js'
 import { createRawFileUploadStream } from '@actions/artifact/lib/internal/upload/stream.js'
 import { uploadToBlobStorage } from '@actions/artifact/lib/internal/upload/blob-upload.js'
 import { getMimeType } from '@actions/artifact/lib/internal/upload/types.js'
@@ -16,7 +15,6 @@ const ERROR_PREFIX = 'GHA_ARTIFACT_CLIENT_ERROR:'
  *   name: string,
  *   filePath: string,
  *   mimeType?: string,
- *   retentionDays?: number,
  *   expiresAt?: number,
  * }} UploadPayload
  */
@@ -102,7 +100,7 @@ async function withStdoutRedirect(fn) {
  * @returns {Promise<{size: number, digest: string, id: string}>}
  */
 async function uploadArtifact(payload) {
-  const { name, filePath, mimeType, retentionDays, expiresAt } = payload
+  const { name, filePath, mimeType, expiresAt } = payload
 
   validateArtifactName(name)
 
@@ -123,8 +121,6 @@ async function uploadArtifact(payload) {
   let expires
   if (expiresAt !== undefined) {
     expires = Timestamp.fromDate(new Date(expiresAt * 1000))
-  } else {
-    expires = getExpiration(retentionDays)
   }
   if (expires !== undefined) {
     createArtifactReq.expiresAt = expires

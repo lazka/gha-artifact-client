@@ -231,7 +231,6 @@ def test_upload_file_includes_expires_at_when_requested(
 
     payload = captured["payload"]
     assert payload["expiresAt"] == pytest.approx(expiry.timestamp())
-    assert "retentionDays" not in payload
 
 
 def test_upload_file_includes_expires_in_when_requested(
@@ -270,7 +269,6 @@ def test_upload_file_includes_expires_in_when_requested(
     payload = captured["payload"]
     assert payload["expiresAt"] == pytest.approx(before + 3600, abs=5)
     assert payload["expiresAt"] <= after + 3600
-    assert "retentionDays" not in payload
 
 
 def test_upload_file_expires_at_and_expires_in_conflict(
@@ -418,7 +416,6 @@ def test_upload_fileobj_spools_to_temp_file(
     assert captured["data"] == b"payload"
     payload = captured["payload"]
     assert payload["name"] == "payload.bin"
-    assert "retentionDays" not in payload
 
 
 def test_staged_uploads_use_runner_temp_when_set(
