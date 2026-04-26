@@ -1,6 +1,7 @@
 import { defineConfig } from "rolldown";
 import { fileURLToPath } from "node:url";
 import { resolve as resolvePath } from "node:path";
+import sbom from "rollup-plugin-sbom";
 
 // @actions/artifact only exposes its public API via the package "exports" map.
 // We import internal subpaths directly, so resolve them to their .js files via
@@ -42,4 +43,10 @@ export default defineConfig({
   resolve: {
     alias,
   },
+  plugins: [sbom({
+    includeWellKnown: false,
+    outDir: '',
+    outFilename: 'artifact_node_wrapper.mjs.cdx',
+    saveTimestamp: false,
+})],
 });

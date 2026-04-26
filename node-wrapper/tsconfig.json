@@ -47,6 +47,7 @@
     "*.js"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "rolldown.config.js"
   ]
 }
