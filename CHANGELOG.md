@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.2.1
+
+- Updated vendored dependencies
+- Include SBOM for vendored dependencies
+
 ## v0.2.0
 
 - New APIs for deleting artifacts, listing artifacts, and generating download
