@@ -6,6 +6,10 @@ updates:
       interval: "weekly"
     cooldown:
       default-days: 4
+    groups:
+      uv-dependencies:
+        patterns:
+          - "*"
 
   - package-ecosystem: "npm"
     directory: "/node-wrapper"
@@ -13,3 +17,7 @@ updates:
       interval: "weekly"
     cooldown:
       default-days: 4
+    groups:
+      npm-dependencies:
+        patterns:
+          - "*"
