@@ -12,7 +12,6 @@
 		"tools": [
 			{
 				"name": "rollup-plugin-sbom",
-				"version": "3.1.0",
 				"externalReferences": [
 					{
 						"url": "git+https://github.com/janbiasi/rollup-plugin-sbom.git",

@@ -48,5 +48,10 @@ export default defineConfig({
     outDir: '',
     outFilename: 'artifact_node_wrapper.mjs.cdx',
     saveTimestamp: false,
+    afterCollect(bom) {
+      for (const tool of bom.metadata.tools.tools) {
+        tool.version = undefined;
+      }
+    },
 })],
 });
