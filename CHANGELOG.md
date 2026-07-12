@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.2
+
+- Updated vendored dependencies
+
 ## v0.2.1
 
 - Updated vendored dependencies
