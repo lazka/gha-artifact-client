@@ -29,6 +29,26 @@
 						"comment": "as detected from PackageJson property \"bugs.url\""
 					}
 				]
+			},
+			{
+				"name": "rolldown",
+				"externalReferences": [
+					{
+						"url": "git+https://github.com/rolldown/rolldown.git#packages/rolldown",
+						"type": "vcs",
+						"comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
+					},
+					{
+						"url": "https://rolldown.rs/",
+						"type": "website",
+						"comment": "as detected from PackageJson property \"homepage\""
+					},
+					{
+						"url": "https://github.com/rolldown/rolldown/issues",
+						"type": "issue-tracker",
+						"comment": "as detected from PackageJson property \"bugs.url\""
+					}
+				]
 			}
 		],
 		"component": {
@@ -43,8 +63,8 @@
 			"type": "library",
 			"name": "core",
 			"group": "@actions",
-			"version": "3.0.0",
-			"bom-ref": "pkg:npm/%40actions/core@3.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/core",
+			"version": "3.0.1",
+			"bom-ref": "pkg:npm/%40actions/core@3.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fcore",
 			"description": "Actions core lib",
 			"licenses": [
 				{
@@ -54,7 +74,7 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/%40actions/core@3.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/core",
+			"purl": "pkg:npm/%40actions/core@3.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fcore",
 			"externalReferences": [
 				{
 					"url": "git+https://github.com/actions/toolkit.git#packages/core",
@@ -77,8 +97,8 @@
 			"type": "library",
 			"name": "http-client",
 			"group": "@actions",
-			"version": "4.0.0",
-			"bom-ref": "pkg:npm/%40actions/http-client@4.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/http-client",
+			"version": "4.0.1",
+			"bom-ref": "pkg:npm/%40actions/http-client@4.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fhttp-client",
 			"description": "Actions Http Client",
 			"licenses": [
 				{
@@ -88,7 +108,7 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/%40actions/http-client@4.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/http-client",
+			"purl": "pkg:npm/%40actions/http-client@4.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fhttp-client",
 			"externalReferences": [
 				{
 					"url": "git+https://github.com/actions/toolkit.git#packages/http-client",
@@ -144,8 +164,8 @@
 		{
 			"type": "library",
 			"name": "undici",
-			"version": "6.25.0",
-			"bom-ref": "pkg:npm/undici@6.25.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodejs%2Fundici.git",
+			"version": "6.27.0",
+			"bom-ref": "pkg:npm/undici@6.27.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodejs%2Fundici.git",
 			"description": "An HTTP/1.1 client, written from scratch for Node.js",
 			"licenses": [
 				{
@@ -155,7 +175,7 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/undici@6.25.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodejs%2Fundici.git",
+			"purl": "pkg:npm/undici@6.27.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodejs%2Fundici.git",
 			"externalReferences": [
 				{
 					"url": "git+https://github.com/nodejs/undici.git",
@@ -179,7 +199,7 @@
 			"name": "io",
 			"group": "@actions",
 			"version": "3.0.2",
-			"bom-ref": "pkg:npm/%40actions/io@3.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/io",
+			"bom-ref": "pkg:npm/%40actions/io@3.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fio",
 			"description": "Actions io lib",
 			"licenses": [
 				{
@@ -189,7 +209,7 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/%40actions/io@3.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/io",
+			"purl": "pkg:npm/%40actions/io@3.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fio",
 			"externalReferences": [
 				{
 					"url": "git+https://github.com/actions/toolkit.git#packages/io",
@@ -213,7 +233,7 @@
 			"name": "exec",
 			"group": "@actions",
 			"version": "3.0.0",
-			"bom-ref": "pkg:npm/%40actions/exec@3.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/exec",
+			"bom-ref": "pkg:npm/%40actions/exec@3.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fexec",
 			"description": "Actions exec lib",
 			"licenses": [
 				{
@@ -223,7 +243,7 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/%40actions/exec@3.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/exec",
+			"purl": "pkg:npm/%40actions/exec@3.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fexec",
 			"externalReferences": [
 				{
 					"url": "git+https://github.com/actions/toolkit.git#packages/exec",
@@ -247,7 +267,7 @@
 			"name": "artifact",
 			"group": "@actions",
 			"version": "6.2.1",
-			"bom-ref": "pkg:npm/%40actions/artifact@6.2.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/artifact",
+			"bom-ref": "pkg:npm/%40actions/artifact@6.2.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fartifact",
 			"description": "Actions artifact lib",
 			"licenses": [
 				{
@@ -257,7 +277,7 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/%40actions/artifact@6.2.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/artifact",
+			"purl": "pkg:npm/%40actions/artifact@6.2.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fartifact",
 			"externalReferences": [
 				{
 					"url": "git+https://github.com/actions/toolkit.git#packages/artifact",
@@ -281,7 +301,7 @@
 			"name": "runtime",
 			"group": "@protobuf-ts",
 			"version": "2.11.1",
-			"bom-ref": "pkg:npm/%40protobuf-ts/runtime@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git#packages/runtime",
+			"bom-ref": "pkg:npm/%40protobuf-ts/runtime@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git%23packages%2Fruntime",
 			"author": "Timo Stamm",
 			"description": "Runtime library for code generated by the protoc plugin \"protobuf-ts\"",
 			"licenses": [
@@ -290,7 +310,7 @@
 					"acknowledgement": "declared"
 				}
 			],
-			"purl": "pkg:npm/%40protobuf-ts/runtime@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git#packages/runtime",
+			"purl": "pkg:npm/%40protobuf-ts/runtime@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git%23packages%2Fruntime",
 			"externalReferences": [
 				{
 					"url": "git+https://github.com/timostamm/protobuf-ts.git#packages/runtime",
@@ -314,7 +334,7 @@
 			"name": "runtime-rpc",
 			"group": "@protobuf-ts",
 			"version": "2.11.1",
-			"bom-ref": "pkg:npm/%40protobuf-ts/runtime-rpc@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git#packages/runtime-rpc",
+			"bom-ref": "pkg:npm/%40protobuf-ts/runtime-rpc@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git%23packages%2Fruntime-rpc",
 			"author": "Timo Stamm",
 			"description": "Runtime library for RPC clients generated by the protoc plugin \"protobuf-ts\"",
 			"licenses": [
@@ -325,7 +345,7 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/%40protobuf-ts/runtime-rpc@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git#packages/runtime-rpc",
+			"purl": "pkg:npm/%40protobuf-ts/runtime-rpc@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git%23packages%2Fruntime-rpc",
 			"externalReferences": [
 				{
 					"url": "git+https://github.com/timostamm/protobuf-ts.git#packages/runtime-rpc",
@@ -382,8 +402,8 @@
 			"type": "library",
 			"name": "ts-http-runtime",
 			"group": "@typespec",
-			"version": "0.3.5",
-			"bom-ref": "pkg:npm/%40typespec/ts-http-runtime@0.3.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+			"version": "0.3.6",
+			"bom-ref": "pkg:npm/%40typespec/ts-http-runtime@0.3.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fts-http-runtime",
 			"author": "Microsoft Corporation",
 			"description": "Isomorphic client library for making HTTP requests in node.js and browser.",
 			"licenses": [
@@ -394,15 +414,15 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/%40typespec/ts-http-runtime@0.3.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+			"purl": "pkg:npm/%40typespec/ts-http-runtime@0.3.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fts-http-runtime",
 			"externalReferences": [
 				{
-					"url": "git+https://github.com/Azure/azure-sdk-for-js.git",
+					"url": "git+https://github.com/Azure/azure-sdk-for-js.git#sdk/core/ts-http-runtime",
 					"type": "vcs",
-					"comment": "as detected from PackageJson property \"repository.url\""
+					"comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
 				},
 				{
-					"url": "https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/core/ts-http-runtime/",
+					"url": "https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/core/ts-http-runtime/README.md",
 					"type": "website",
 					"comment": "as detected from PackageJson property \"homepage\""
 				},
@@ -484,7 +504,7 @@
 			"type": "library",
 			"name": "agent-base",
 			"version": "7.1.4",
-			"bom-ref": "pkg:npm/agent-base@7.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git#packages/agent-base",
+			"bom-ref": "pkg:npm/agent-base@7.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git%23packages%2Fagent-base",
 			"author": "Nathan Rajlich",
 			"description": "Turn a function into an `http.Agent` instance",
 			"licenses": [
@@ -495,7 +515,7 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/agent-base@7.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git#packages/agent-base",
+			"purl": "pkg:npm/agent-base@7.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git%23packages%2Fagent-base",
 			"externalReferences": [
 				{
 					"url": "git+https://github.com/TooTallNate/proxy-agents.git#packages/agent-base",
@@ -518,7 +538,7 @@
 			"type": "library",
 			"name": "https-proxy-agent",
 			"version": "7.0.6",
-			"bom-ref": "pkg:npm/https-proxy-agent@7.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git#packages/https-proxy-agent",
+			"bom-ref": "pkg:npm/https-proxy-agent@7.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git%23packages%2Fhttps-proxy-agent",
 			"author": "Nathan Rajlich",
 			"description": "An HTTP(s) proxy `http.Agent` implementation for HTTPS",
 			"licenses": [
@@ -529,7 +549,7 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/https-proxy-agent@7.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git#packages/https-proxy-agent",
+			"purl": "pkg:npm/https-proxy-agent@7.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git%23packages%2Fhttps-proxy-agent",
 			"externalReferences": [
 				{
 					"url": "git+https://github.com/TooTallNate/proxy-agents.git#packages/https-proxy-agent",
@@ -552,7 +572,7 @@
 			"type": "library",
 			"name": "http-proxy-agent",
 			"version": "7.0.2",
-			"bom-ref": "pkg:npm/http-proxy-agent@7.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git#packages/http-proxy-agent",
+			"bom-ref": "pkg:npm/http-proxy-agent@7.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git%23packages%2Fhttp-proxy-agent",
 			"author": "Nathan Rajlich",
 			"description": "An HTTP(s) proxy `http.Agent` implementation for HTTP",
 			"licenses": [
@@ -563,7 +583,7 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/http-proxy-agent@7.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git#packages/http-proxy-agent",
+			"purl": "pkg:npm/http-proxy-agent@7.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git%23packages%2Fhttp-proxy-agent",
 			"externalReferences": [
 				{
 					"url": "git+https://github.com/TooTallNate/proxy-agents.git#packages/http-proxy-agent",
@@ -586,8 +606,8 @@
 			"type": "library",
 			"name": "core-rest-pipeline",
 			"group": "@azure",
-			"version": "1.23.0",
-			"bom-ref": "pkg:npm/%40azure/core-rest-pipeline@1.23.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+			"version": "1.24.0",
+			"bom-ref": "pkg:npm/%40azure/core-rest-pipeline@1.24.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fcore-rest-pipeline",
 			"author": "Microsoft Corporation",
 			"description": "Isomorphic client library for making HTTP requests in node.js and browser.",
 			"licenses": [
@@ -598,15 +618,15 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/%40azure/core-rest-pipeline@1.23.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+			"purl": "pkg:npm/%40azure/core-rest-pipeline@1.24.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fcore-rest-pipeline",
 			"externalReferences": [
 				{
-					"url": "git+https://github.com/Azure/azure-sdk-for-js.git",
+					"url": "git+https://github.com/Azure/azure-sdk-for-js.git#sdk/core/core-rest-pipeline",
 					"type": "vcs",
-					"comment": "as detected from PackageJson property \"repository.url\""
+					"comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
 				},
 				{
-					"url": "https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/core/core-rest-pipeline/",
+					"url": "https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/core/core-rest-pipeline/README.md",
 					"type": "website",
 					"comment": "as detected from PackageJson property \"homepage\""
 				},
@@ -831,8 +851,8 @@
 			"type": "library",
 			"name": "core-client",
 			"group": "@azure",
-			"version": "1.10.1",
-			"bom-ref": "pkg:npm/%40azure/core-client@1.10.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+			"version": "1.10.2",
+			"bom-ref": "pkg:npm/%40azure/core-client@1.10.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fcore-client",
 			"author": "Microsoft Corporation",
 			"description": "Core library for interfacing with AutoRest generated code",
 			"licenses": [
@@ -843,12 +863,12 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/%40azure/core-client@1.10.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+			"purl": "pkg:npm/%40azure/core-client@1.10.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fcore-client",
 			"externalReferences": [
 				{
-					"url": "git+https://github.com/Azure/azure-sdk-for-js.git",
+					"url": "git+https://github.com/Azure/azure-sdk-for-js.git#sdk/core/core-client",
 					"type": "vcs",
-					"comment": "as detected from PackageJson property \"repository.url\""
+					"comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
 				},
 				{
 					"url": "https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/core/core-client/",
@@ -865,8 +885,8 @@
 		{
 			"type": "library",
 			"name": "fast-xml-parser",
-			"version": "5.7.1",
-			"bom-ref": "pkg:npm/fast-xml-parser@5.7.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Ffast-xml-parser.git",
+			"version": "5.9.3",
+			"bom-ref": "pkg:npm/fast-xml-parser@5.9.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Ffast-xml-parser.git",
 			"author": "Amit Gupta",
 			"description": "Validate XML, Parse XML, Build XML without C/C++ based libraries",
 			"licenses": [
@@ -877,7 +897,7 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/fast-xml-parser@5.7.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Ffast-xml-parser.git",
+			"purl": "pkg:npm/fast-xml-parser@5.9.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Ffast-xml-parser.git",
 			"externalReferences": [
 				{
 					"url": "git+https://github.com/NaturalIntelligence/fast-xml-parser.git",
@@ -900,8 +920,8 @@
 			"type": "library",
 			"name": "entities",
 			"group": "@nodable",
-			"version": "2.1.0",
-			"bom-ref": "pkg:npm/%40nodable/entities@2.1.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodable%2Fval-parsers.git",
+			"version": "2.2.0",
+			"bom-ref": "pkg:npm/%40nodable/entities@2.2.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodable%2Fval-parsers.git",
 			"author": "Amit Gupta",
 			"description": "Entity parser for XML, HTML, External entites with security and NCR control",
 			"licenses": [
@@ -912,7 +932,7 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/%40nodable/entities@2.1.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodable%2Fval-parsers.git",
+			"purl": "pkg:npm/%40nodable/entities@2.2.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodable%2Fval-parsers.git",
 			"externalReferences": [
 				{
 					"url": "git+https://github.com/nodable/val-parsers.git",
@@ -933,9 +953,77 @@
 		},
 		{
 			"type": "library",
+			"name": "xml-naming",
+			"version": "0.1.0",
+			"bom-ref": "pkg:npm/xml-naming@0.1.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fxml-naming.git",
+			"author": "Amit Gupta",
+			"description": "Validates XML name productions — Name, NCName, QName, NMToken, NMTokens — for XML 1.0 and 1.1",
+			"licenses": [
+				{
+					"license": {
+						"id": "MIT",
+						"acknowledgement": "declared"
+					}
+				}
+			],
+			"purl": "pkg:npm/xml-naming@0.1.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fxml-naming.git",
+			"externalReferences": [
+				{
+					"url": "git+https://github.com/NaturalIntelligence/xml-naming.git",
+					"type": "vcs",
+					"comment": "as detected from PackageJson property \"repository.url\""
+				},
+				{
+					"url": "https://github.com/NaturalIntelligence/xml-naming#readme",
+					"type": "website",
+					"comment": "as detected from PackageJson property \"homepage\""
+				},
+				{
+					"url": "https://github.com/NaturalIntelligence/xml-naming/issues",
+					"type": "issue-tracker",
+					"comment": "as detected from PackageJson property \"bugs.url\""
+				}
+			]
+		},
+		{
+			"type": "library",
+			"name": "anynum",
+			"version": "1.0.1",
+			"bom-ref": "pkg:npm/anynum@1.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fanynum.git",
+			"author": "Amit Gupta",
+			"description": "Normalize all Unicode decimal digits (Devanagari, Arabic, Thai, etc.) to ASCII numerals. Zero dependencies, performance-first.",
+			"licenses": [
+				{
+					"license": {
+						"id": "MIT",
+						"acknowledgement": "declared"
+					}
+				}
+			],
+			"purl": "pkg:npm/anynum@1.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fanynum.git",
+			"externalReferences": [
+				{
+					"url": "git+https://github.com/NaturalIntelligence/anynum.git",
+					"type": "vcs",
+					"comment": "as detected from PackageJson property \"repository.url\""
+				},
+				{
+					"url": "https://github.com/NaturalIntelligence/anynum#readme",
+					"type": "website",
+					"comment": "as detected from PackageJson property \"homepage\""
+				},
+				{
+					"url": "https://github.com/NaturalIntelligence/anynum/issues",
+					"type": "issue-tracker",
+					"comment": "as detected from PackageJson property \"bugs.url\""
+				}
+			]
+		},
+		{
+			"type": "library",
 			"name": "strnum",
-			"version": "2.2.3",
-			"bom-ref": "pkg:npm/strnum@2.2.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fstrnum.git",
+			"version": "2.4.1",
+			"bom-ref": "pkg:npm/strnum@2.4.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fstrnum.git",
 			"author": "Amit Gupta",
 			"description": "Parse String to Number based on configuration",
 			"licenses": [
@@ -946,7 +1034,7 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/strnum@2.2.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fstrnum.git",
+			"purl": "pkg:npm/strnum@2.4.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fstrnum.git",
 			"externalReferences": [
 				{
 					"url": "git+https://github.com/NaturalIntelligence/strnum.git",
@@ -968,8 +1056,8 @@
 		{
 			"type": "library",
 			"name": "path-expression-matcher",
-			"version": "1.5.0",
-			"bom-ref": "pkg:npm/path-expression-matcher@1.5.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fpath-expression-matcher.git",
+			"version": "1.6.1",
+			"bom-ref": "pkg:npm/path-expression-matcher@1.6.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fpath-expression-matcher.git",
 			"author": "Amit Gupta",
 			"description": "Efficient path tracking and pattern matching for XML/JSON parsers",
 			"licenses": [
@@ -980,7 +1068,7 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/path-expression-matcher@1.5.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fpath-expression-matcher.git",
+			"purl": "pkg:npm/path-expression-matcher@1.6.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fpath-expression-matcher.git",
 			"externalReferences": [
 				{
 					"url": "git+https://github.com/NaturalIntelligence/path-expression-matcher.git",
@@ -1001,9 +1089,43 @@
 		},
 		{
 			"type": "library",
+			"name": "is-unsafe",
+			"version": "1.0.1",
+			"bom-ref": "pkg:npm/is-unsafe@1.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fis-unsafe.git",
+			"author": "Amit Gupta",
+			"description": "Zero-dependency, DOM-free, pure predicate for detecting unsafe strings across HTML, XML, SVG, SQL, SHELL, and REGEX contexts",
+			"licenses": [
+				{
+					"license": {
+						"id": "MIT",
+						"acknowledgement": "declared"
+					}
+				}
+			],
+			"purl": "pkg:npm/is-unsafe@1.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fis-unsafe.git",
+			"externalReferences": [
+				{
+					"url": "git+https://github.com/NaturalIntelligence/is-unsafe.git",
+					"type": "vcs",
+					"comment": "as detected from PackageJson property \"repository.url\""
+				},
+				{
+					"url": "https://github.com/NaturalIntelligence/is-unsafe#readme",
+					"type": "website",
+					"comment": "as detected from PackageJson property \"homepage\""
+				},
+				{
+					"url": "https://github.com/NaturalIntelligence/is-unsafe/issues",
+					"type": "issue-tracker",
+					"comment": "as detected from PackageJson property \"bugs.url\""
+				}
+			]
+		},
+		{
+			"type": "library",
 			"name": "fast-xml-builder",
-			"version": "1.1.5",
-			"bom-ref": "pkg:npm/fast-xml-builder@1.1.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Ffast-xml-builder.git",
+			"version": "1.2.1",
+			"bom-ref": "pkg:npm/fast-xml-builder@1.2.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Ffast-xml-builder.git",
 			"author": "Amit Gupta",
 			"description": "Build XML from JSON without C/C++ based libraries",
 			"licenses": [
@@ -1014,7 +1136,7 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/fast-xml-builder@1.1.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Ffast-xml-builder.git",
+			"purl": "pkg:npm/fast-xml-builder@1.2.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Ffast-xml-builder.git",
 			"externalReferences": [
 				{
 					"url": "git+https://github.com/NaturalIntelligence/fast-xml-builder.git",
@@ -1072,8 +1194,8 @@
 			"type": "library",
 			"name": "storage-blob",
 			"group": "@azure",
-			"version": "12.31.0",
-			"bom-ref": "pkg:npm/%40azure/storage-blob@12.31.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+			"version": "12.33.0",
+			"bom-ref": "pkg:npm/%40azure/storage-blob@12.33.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fstorage%2Fstorage-blob",
 			"author": "Microsoft Corporation",
 			"description": "Microsoft Azure Storage SDK for JavaScript - Blob",
 			"licenses": [
@@ -1084,15 +1206,15 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/%40azure/storage-blob@12.31.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+			"purl": "pkg:npm/%40azure/storage-blob@12.33.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fstorage%2Fstorage-blob",
 			"externalReferences": [
 				{
-					"url": "git+https://github.com/Azure/azure-sdk-for-js.git",
+					"url": "git+https://github.com/Azure/azure-sdk-for-js.git#sdk/storage/storage-blob",
 					"type": "vcs",
-					"comment": "as detected from PackageJson property \"repository.url\""
+					"comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
 				},
 				{
-					"url": "https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/storage/storage-blob/",
+					"url": "https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/storage/storage-blob/README.md",
 					"type": "website",
 					"comment": "as detected from PackageJson property \"homepage\""
 				},
@@ -1107,8 +1229,8 @@
 			"type": "library",
 			"name": "storage-common",
 			"group": "@azure",
-			"version": "12.3.0",
-			"bom-ref": "pkg:npm/%40azure/storage-common@12.3.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+			"version": "12.4.1",
+			"bom-ref": "pkg:npm/%40azure/storage-common@12.4.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fstorage%2Fstorage-common",
 			"author": "Microsoft Corporation",
 			"description": "Azure Storage Common Client Library for JavaScript",
 			"licenses": [
@@ -1119,15 +1241,15 @@
 					}
 				}
 			],
-			"purl": "pkg:npm/%40azure/storage-common@12.3.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+			"purl": "pkg:npm/%40azure/storage-common@12.4.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fstorage%2Fstorage-common",
 			"externalReferences": [
 				{
-					"url": "git+https://github.com/Azure/azure-sdk-for-js.git",
+					"url": "git+https://github.com/Azure/azure-sdk-for-js.git#sdk/storage/storage-common",
 					"type": "vcs",
-					"comment": "as detected from PackageJson property \"repository.url\""
+					"comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
 				},
 				{
-					"url": "https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/storage/storage-internal-avro/",
+					"url": "https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/storage/storage-common/README.md",
 					"type": "website",
 					"comment": "as detected from PackageJson property \"homepage\""
 				},
@@ -1178,66 +1300,66 @@
 		{
 			"ref": "pkg:npm/gha-artifact-client-node-wrapper",
 			"dependsOn": [
-				"pkg:npm/%40actions/artifact@6.2.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/artifact"
+				"pkg:npm/%40actions/artifact@6.2.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fartifact"
 			]
 		},
 		{
-			"ref": "pkg:npm/%40actions/core@3.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/core",
+			"ref": "pkg:npm/%40actions/core@3.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fcore",
 			"dependsOn": [
-				"pkg:npm/%40actions/http-client@4.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/http-client",
-				"pkg:npm/%40actions/exec@3.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/exec"
+				"pkg:npm/%40actions/http-client@4.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fhttp-client",
+				"pkg:npm/%40actions/exec@3.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fexec"
 			]
 		},
 		{
-			"ref": "pkg:npm/%40actions/http-client@4.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/http-client",
+			"ref": "pkg:npm/%40actions/http-client@4.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fhttp-client",
 			"dependsOn": [
 				"pkg:npm/tunnel@0.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fkoichik%2Fnode-tunnel.git",
-				"pkg:npm/undici@6.25.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodejs%2Fundici.git"
+				"pkg:npm/undici@6.27.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodejs%2Fundici.git"
 			]
 		},
 		{
 			"ref": "pkg:npm/tunnel@0.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fkoichik%2Fnode-tunnel.git"
 		},
 		{
-			"ref": "pkg:npm/undici@6.25.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodejs%2Fundici.git"
+			"ref": "pkg:npm/undici@6.27.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodejs%2Fundici.git"
 		},
 		{
-			"ref": "pkg:npm/%40actions/io@3.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/io"
+			"ref": "pkg:npm/%40actions/io@3.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fio"
 		},
 		{
-			"ref": "pkg:npm/%40actions/exec@3.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/exec",
+			"ref": "pkg:npm/%40actions/exec@3.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fexec",
 			"dependsOn": [
-				"pkg:npm/%40actions/io@3.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/io"
+				"pkg:npm/%40actions/io@3.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fio"
 			]
 		},
 		{
-			"ref": "pkg:npm/%40actions/artifact@6.2.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/artifact",
+			"ref": "pkg:npm/%40actions/artifact@6.2.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fartifact",
 			"dependsOn": [
-				"pkg:npm/%40actions/core@3.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/core",
-				"pkg:npm/%40protobuf-ts/runtime@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git#packages/runtime",
-				"pkg:npm/%40protobuf-ts/runtime-rpc@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git#packages/runtime-rpc",
+				"pkg:npm/%40actions/core@3.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fcore",
+				"pkg:npm/%40protobuf-ts/runtime@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git%23packages%2Fruntime",
+				"pkg:npm/%40protobuf-ts/runtime-rpc@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git%23packages%2Fruntime-rpc",
 				"pkg:npm/jwt-decode@4.0.0?vcs_url=git%3A%2F%2Fgithub.com%2Fauth0%2Fjwt-decode.git",
-				"pkg:npm/%40actions/http-client@4.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git#packages/http-client",
-				"pkg:npm/%40azure/storage-blob@12.31.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git"
+				"pkg:npm/%40actions/http-client@4.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Factions%2Ftoolkit.git%23packages%2Fhttp-client",
+				"pkg:npm/%40azure/storage-blob@12.33.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fstorage%2Fstorage-blob"
 			]
 		},
 		{
-			"ref": "pkg:npm/%40protobuf-ts/runtime@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git#packages/runtime"
+			"ref": "pkg:npm/%40protobuf-ts/runtime@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git%23packages%2Fruntime"
 		},
 		{
-			"ref": "pkg:npm/%40protobuf-ts/runtime-rpc@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git#packages/runtime-rpc",
+			"ref": "pkg:npm/%40protobuf-ts/runtime-rpc@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git%23packages%2Fruntime-rpc",
 			"dependsOn": [
-				"pkg:npm/%40protobuf-ts/runtime@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git#packages/runtime"
+				"pkg:npm/%40protobuf-ts/runtime@2.11.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Ftimostamm%2Fprotobuf-ts.git%23packages%2Fruntime"
 			]
 		},
 		{
 			"ref": "pkg:npm/jwt-decode@4.0.0?vcs_url=git%3A%2F%2Fgithub.com%2Fauth0%2Fjwt-decode.git"
 		},
 		{
-			"ref": "pkg:npm/%40typespec/ts-http-runtime@0.3.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+			"ref": "pkg:npm/%40typespec/ts-http-runtime@0.3.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fts-http-runtime",
 			"dependsOn": [
-				"pkg:npm/https-proxy-agent@7.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git#packages/https-proxy-agent",
-				"pkg:npm/http-proxy-agent@7.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git#packages/http-proxy-agent"
+				"pkg:npm/https-proxy-agent@7.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git%23packages%2Fhttps-proxy-agent",
+				"pkg:npm/http-proxy-agent@7.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git%23packages%2Fhttp-proxy-agent"
 			]
 		},
 		{
@@ -1250,35 +1372,35 @@
 			]
 		},
 		{
-			"ref": "pkg:npm/agent-base@7.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git#packages/agent-base"
+			"ref": "pkg:npm/agent-base@7.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git%23packages%2Fagent-base"
 		},
 		{
-			"ref": "pkg:npm/https-proxy-agent@7.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git#packages/https-proxy-agent",
+			"ref": "pkg:npm/https-proxy-agent@7.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git%23packages%2Fhttps-proxy-agent",
 			"dependsOn": [
 				"pkg:npm/debug@4.4.3?vcs_url=git%3A%2F%2Fgithub.com%2Fdebug-js%2Fdebug.git",
-				"pkg:npm/agent-base@7.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git#packages/agent-base"
+				"pkg:npm/agent-base@7.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git%23packages%2Fagent-base"
 			]
 		},
 		{
-			"ref": "pkg:npm/http-proxy-agent@7.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git#packages/http-proxy-agent",
+			"ref": "pkg:npm/http-proxy-agent@7.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git%23packages%2Fhttp-proxy-agent",
 			"dependsOn": [
 				"pkg:npm/debug@4.4.3?vcs_url=git%3A%2F%2Fgithub.com%2Fdebug-js%2Fdebug.git",
-				"pkg:npm/agent-base@7.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git#packages/agent-base"
+				"pkg:npm/agent-base@7.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FTooTallNate%2Fproxy-agents.git%23packages%2Fagent-base"
 			]
 		},
 		{
-			"ref": "pkg:npm/%40azure/core-rest-pipeline@1.23.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+			"ref": "pkg:npm/%40azure/core-rest-pipeline@1.24.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fcore-rest-pipeline",
 			"dependsOn": [
-				"pkg:npm/%40typespec/ts-http-runtime@0.3.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+				"pkg:npm/%40typespec/ts-http-runtime@0.3.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fts-http-runtime",
 				"pkg:npm/%40azure/logger@1.3.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
-				"pkg:npm/%40azure/core-util@1.13.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
-				"pkg:npm/%40azure/core-tracing@1.3.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git"
+				"pkg:npm/%40azure/core-tracing@1.3.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+				"pkg:npm/%40azure/core-util@1.13.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git"
 			]
 		},
 		{
 			"ref": "pkg:npm/%40azure/logger@1.3.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
 			"dependsOn": [
-				"pkg:npm/%40typespec/ts-http-runtime@0.3.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git"
+				"pkg:npm/%40typespec/ts-http-runtime@0.3.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fts-http-runtime"
 			]
 		},
 		{
@@ -1288,7 +1410,7 @@
 			"ref": "pkg:npm/%40azure/core-util@1.13.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
 			"dependsOn": [
 				"pkg:npm/%40azure/abort-controller@2.1.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
-				"pkg:npm/%40typespec/ts-http-runtime@0.3.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git"
+				"pkg:npm/%40typespec/ts-http-runtime@0.3.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fts-http-runtime"
 			]
 		},
 		{
@@ -1300,57 +1422,73 @@
 		{
 			"ref": "pkg:npm/%40azure/core-http-compat@2.4.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
 			"dependsOn": [
-				"pkg:npm/%40azure/core-rest-pipeline@1.23.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
-				"pkg:npm/%40azure/core-client@1.10.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git"
+				"pkg:npm/%40azure/core-rest-pipeline@1.24.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fcore-rest-pipeline",
+				"pkg:npm/%40azure/core-client@1.10.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fcore-client"
 			]
 		},
 		{
-			"ref": "pkg:npm/%40azure/core-client@1.10.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+			"ref": "pkg:npm/%40azure/core-client@1.10.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fcore-client",
 			"dependsOn": [
-				"pkg:npm/%40azure/core-rest-pipeline@1.23.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+				"pkg:npm/%40azure/core-util@1.13.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+				"pkg:npm/%40azure/core-rest-pipeline@1.24.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fcore-rest-pipeline",
 				"pkg:npm/%40azure/logger@1.3.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git"
 			]
 		},
 		{
-			"ref": "pkg:npm/fast-xml-parser@5.7.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Ffast-xml-parser.git",
+			"ref": "pkg:npm/fast-xml-parser@5.9.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Ffast-xml-parser.git",
 			"dependsOn": [
-				"pkg:npm/%40nodable/entities@2.1.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodable%2Fval-parsers.git",
-				"pkg:npm/strnum@2.2.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fstrnum.git",
-				"pkg:npm/path-expression-matcher@1.5.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fpath-expression-matcher.git",
-				"pkg:npm/fast-xml-builder@1.1.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Ffast-xml-builder.git"
+				"pkg:npm/%40nodable/entities@2.2.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodable%2Fval-parsers.git",
+				"pkg:npm/xml-naming@0.1.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fxml-naming.git",
+				"pkg:npm/strnum@2.4.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fstrnum.git",
+				"pkg:npm/path-expression-matcher@1.6.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fpath-expression-matcher.git",
+				"pkg:npm/is-unsafe@1.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fis-unsafe.git",
+				"pkg:npm/fast-xml-builder@1.2.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Ffast-xml-builder.git"
 			]
 		},
 		{
-			"ref": "pkg:npm/%40nodable/entities@2.1.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodable%2Fval-parsers.git"
+			"ref": "pkg:npm/%40nodable/entities@2.2.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodable%2Fval-parsers.git"
 		},
 		{
-			"ref": "pkg:npm/strnum@2.2.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fstrnum.git"
+			"ref": "pkg:npm/xml-naming@0.1.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fxml-naming.git"
 		},
 		{
-			"ref": "pkg:npm/path-expression-matcher@1.5.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fpath-expression-matcher.git"
+			"ref": "pkg:npm/anynum@1.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fanynum.git"
 		},
 		{
-			"ref": "pkg:npm/fast-xml-builder@1.1.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Ffast-xml-builder.git",
+			"ref": "pkg:npm/strnum@2.4.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fstrnum.git",
 			"dependsOn": [
-				"pkg:npm/path-expression-matcher@1.5.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fpath-expression-matcher.git"
+				"pkg:npm/anynum@1.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fanynum.git"
+			]
+		},
+		{
+			"ref": "pkg:npm/path-expression-matcher@1.6.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fpath-expression-matcher.git"
+		},
+		{
+			"ref": "pkg:npm/is-unsafe@1.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fis-unsafe.git"
+		},
+		{
+			"ref": "pkg:npm/fast-xml-builder@1.2.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Ffast-xml-builder.git",
+			"dependsOn": [
+				"pkg:npm/path-expression-matcher@1.6.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fpath-expression-matcher.git",
+				"pkg:npm/xml-naming@0.1.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Fxml-naming.git"
 			]
 		},
 		{
 			"ref": "pkg:npm/%40azure/core-xml@1.5.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
 			"dependsOn": [
-				"pkg:npm/fast-xml-parser@5.7.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Ffast-xml-parser.git"
+				"pkg:npm/fast-xml-parser@5.9.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FNaturalIntelligence%2Ffast-xml-parser.git"
 			]
 		},
 		{
-			"ref": "pkg:npm/%40azure/storage-blob@12.31.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+			"ref": "pkg:npm/%40azure/storage-blob@12.33.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fstorage%2Fstorage-blob",
 			"dependsOn": [
 				"pkg:npm/%40azure/logger@1.3.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
 				"pkg:npm/%40azure/core-http-compat@2.4.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
-				"pkg:npm/%40azure/core-rest-pipeline@1.23.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
-				"pkg:npm/%40azure/core-client@1.10.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+				"pkg:npm/%40azure/core-rest-pipeline@1.24.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fcore-rest-pipeline",
+				"pkg:npm/%40azure/core-client@1.10.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fcore-client",
 				"pkg:npm/%40azure/core-xml@1.5.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
 				"pkg:npm/%40azure/core-auth@1.10.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
-				"pkg:npm/%40azure/storage-common@12.3.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+				"pkg:npm/%40azure/storage-common@12.4.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fstorage%2Fstorage-common",
 				"pkg:npm/%40azure/core-util@1.13.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
 				"pkg:npm/%40azure/core-tracing@1.3.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
 				"pkg:npm/%40azure/abort-controller@2.1.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
@@ -1358,12 +1496,12 @@
 			]
 		},
 		{
-			"ref": "pkg:npm/%40azure/storage-common@12.3.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+			"ref": "pkg:npm/%40azure/storage-common@12.4.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fstorage%2Fstorage-common",
 			"dependsOn": [
-				"pkg:npm/%40azure/core-rest-pipeline@1.23.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+				"pkg:npm/%40azure/abort-controller@2.1.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
+				"pkg:npm/%40azure/core-rest-pipeline@1.24.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git%23sdk%2Fcore%2Fcore-rest-pipeline",
 				"pkg:npm/%40azure/core-util@1.13.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
-				"pkg:npm/%40azure/logger@1.3.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git",
-				"pkg:npm/%40azure/abort-controller@2.1.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git"
+				"pkg:npm/%40azure/logger@1.3.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FAzure%2Fazure-sdk-for-js.git"
 			]
 		},
 		{
