@@ -12,12 +12,12 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@types/node": "^26.1.0",
-    "eslint": "^10.6.0",
-    "eslint-plugin-jsdoc": "^63.0.12",
+    "@types/node": "^26.1.1",
+    "eslint": "^10.7.0",
+    "eslint-plugin-jsdoc": "^63.1.0",
     "globals": "^17.7.0",
-    "rolldown": "^1.1.4",
-    "rollup-plugin-sbom": "^3.2.3",
-    "typescript": "^6.0.2"
+    "rolldown": "^1.2.0",
+    "rollup-plugin-sbom": "^4.0.0",
+    "typescript": "^7.0.2"
   }
 }
