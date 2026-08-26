@@ -4,20 +4,18 @@
   "type": "module",
   "scripts": {
     "build": "rolldown -c rolldown.config.js",
-    "lint": "eslint .",
+    "lint": "oxlint .",
     "tsc": "tsc -p tsconfig.json"
   },
   "dependencies": {
     "@actions/artifact": "6.2.1"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
     "@types/node": "^26.1.0",
-    "eslint": "^10.6.0",
-    "eslint-plugin-jsdoc": "^63.0.12",
-    "globals": "^17.7.0",
+    "oxlint": "^1.79.0",
+    "oxlint-tsgolint": "^7.0.2001",
     "rolldown": "^1.1.4",
-    "rollup-plugin-sbom": "^3.2.3",
-    "typescript": "^6.0.2"
+    "rollup-plugin-sbom": "^4.0.0",
+    "typescript": "^7.0.2"
   }
 }

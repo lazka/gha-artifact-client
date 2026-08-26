@@ -85,9 +85,7 @@ function readStdin() {
  */
 async function withStdoutRedirect(fn) {
   const originalWrite = process.stdout.write.bind(process.stdout)
-  const redirectedWrite = /** @type {typeof originalWrite} */ (...args) =>
-    Reflect.apply(process.stderr.write, process.stderr, args)
-  process.stdout.write = redirectedWrite
+  process.stdout.write = process.stderr.write.bind(process.stderr)
 
   try {
     return await fn()
@@ -285,7 +283,9 @@ async function main() {
       const response = await withStdoutRedirect(() => uploadArtifact(payload))
       process.stdout.write(`${JSON.stringify(response)}\n`)
     } else {
-      throw new Error(`Unknown action: ${/** @type {{action: unknown}} */ (payload).action}`)
+      throw new Error(
+        `Unknown action: ${String(/** @type {{action: unknown}} */ (payload).action)}`
+      )
     }
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error)
