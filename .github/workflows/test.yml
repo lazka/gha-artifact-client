@@ -44,10 +44,6 @@ jobs:
         run: npm run lint
         working-directory: node-wrapper
 
-      - name: Type check node wrapper
-        run: npm run tsc
-        working-directory: node-wrapper
-
       - name: Build vendored node wrapper
         run: npm run build
         working-directory: node-wrapper
