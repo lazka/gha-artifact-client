@@ -21,7 +21,6 @@ uv run ruff check
 uv run ruff format --check
 uv run ty check
 npm run lint   # from node-wrapper/
-npm run tsc    # from node-wrapper/
 ```
 
 Run unit tests (no live GHA runtime needed):

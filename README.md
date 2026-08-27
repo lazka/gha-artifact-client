@@ -214,6 +214,5 @@ jobs:
 
 - Install Python dependencies with `uv sync`.
 - Install node wrapper dependencies with `npm ci` in `node-wrapper/`.
-- Lint the node wrapper with `npm run lint` in `node-wrapper/`.
-- Type-check the node wrapper with `npm run tsc` in `node-wrapper/`.
+- Lint/Type-check the node wrapper with `npm run lint` in `node-wrapper/`.
 - Rebuild the vendored node wrapper with `npm run build` in `node-wrapper/`.
