@@ -11,11 +11,11 @@
     "@actions/artifact": "6.2.1"
   },
   "devDependencies": {
-    "@types/node": "^26.1.0",
-    "oxlint": "^1.79.0",
+    "@types/node": "^26.6.4",
+    "oxlint": "^1.86.0",
     "oxlint-tsgolint": "^7.0.2001",
-    "rolldown": "^1.1.4",
-    "rollup-plugin-sbom": "^4.0.0",
+    "rolldown": "^1.2.12",
+    "rollup-plugin-sbom": "^4.0.1",
     "typescript": "^7.0.2"
   }
 }
